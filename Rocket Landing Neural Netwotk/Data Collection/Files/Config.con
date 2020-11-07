@@ -1,0 +1,4 @@
+SCREEN_HEIGHT = 800 ,SCREEN_WIDTH = 1000
+LANDER_IMG_PATH = Sprites/rocket_lander.png
+BACKGROUND_IMG_PATH = Sprites/BackGround.bmp
+FULLSCREEN = TRUE
