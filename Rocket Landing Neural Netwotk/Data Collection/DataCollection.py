@@ -1,10 +1,11 @@
 
 class DataCollection:
 
-    def __init__(self):
+    def __init__(self, all_data):
         self.data_file = open("ce889_dataCollection.csv", "a")
         self.data_file.close()
         self.buffer = []
+        self.all_data = (all_data == "TRUE")
 
     def get_input_row(self, lander, surface, controller):
         # inputs
@@ -16,13 +17,17 @@ class DataCollection:
         dist_to_surface = surface.polygon_rect.topleft[1] - lander.position.y
 
         # create comma separated string row
-        input_row = str(current_speed)+"," + \
-                    str(current_velocity.x) + "," + \
-                    str(current_velocity.y) + "," + \
-                    str(current_angle) + "," + \
-                    str(x_target) + "," + \
-                    str(y_target) + "," + \
-                    str(dist_to_surface)
+        if self.all_data:
+            input_row = str(current_speed)+"," + \
+                        str(current_velocity.x) + "," + \
+                        str(current_velocity.y) + "," + \
+                        str(current_angle) + "," + \
+                        str(x_target) + "," + \
+                        str(y_target) + "," + \
+                        str(dist_to_surface)
+        else:
+            input_row = str(x_target) + "," + \
+                        str(y_target)
 
         return input_row
 
@@ -35,6 +40,7 @@ class DataCollection:
         if (controller.is_up()):
             thrust = 1
         new_vel_y = lander.velocity.y
+        new_vel_x = lander.velocity.x
         
         turning = [0, 0]
         if (controller.is_left()):
@@ -42,13 +48,20 @@ class DataCollection:
         elif (controller.is_right()):
             turning = [0,1]
         new_angle = lander.current_angle
+
         # add output values to the string input row
-        status_row = input_row + "," + \
-                    str(thrust) + "," + \
-                    str(new_vel_y) + "," + \
-                    str(new_angle) + "," + \
-                    str(turning[0]) + "," + str(turning[1]) + "\n"
-        
+        if self.all_data:
+            status_row = input_row + "," + \
+                        str(thrust) + "," + \
+                        str(new_vel_y) + "," + \
+                        str(new_vel_x) + "," + \
+                        str(new_angle) + "," + \
+                        str(turning[0]) + "," + str(turning[1]) + "\n"
+        else:
+            status_row = input_row + "," + \
+                        str(new_vel_y) + "," + \
+                        str(new_vel_x) + "\n"
+
         # save comma separated row in the file
         self.buffer.append(status_row)
 

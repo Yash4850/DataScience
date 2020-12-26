@@ -73,7 +73,7 @@ class GameLoop:
         background_image = pygame.image.load(config_data['BACKGROUND_IMG_PATH']).convert_alpha()
         background_image = pygame.transform.scale(background_image, (config_data['SCREEN_WIDTH'], config_data['SCREEN_HEIGHT']))
 
-        data_collector = DataCollection()
+        data_collector = DataCollection(config_data["ALL_DATA"])
         main_menu = MainMenu((config_data['SCREEN_WIDTH'], config_data['SCREEN_HEIGHT']))
         result_menu = ResultMenu((config_data['SCREEN_WIDTH'], config_data['SCREEN_HEIGHT']))
         score = 0
@@ -128,15 +128,44 @@ class GameLoop:
                     nn_prediction = self.neuralnet.predict(input_row)
                     # print(nn_prediction)
                     # self.controller.set_mouse(False)
-                    # self.controller.set_up(False)
-                    # self.controller.set_left(False)
-                    # self.controller.set_right(False)
-                    if (nn_prediction[0] == 1):
+                    self.controller.set_up(False)
+                    self.controller.set_left(False)
+                    self.controller.set_right(False)
+                    # self.controller.set_up(nn_prediction[0] == 1)
+                    # self.lander.velocity.y = nn_prediction[0]
+                    # self.lander.velocity.x = nn_prediction[1]
+                    if (self.lander.velocity.y > nn_prediction[0]):
                         self.controller.set_up(True)
-                    if (nn_prediction[1] == 1):
-                        self.controller.set_left(True)
-                    elif (nn_prediction[2] == 1):
+                    # self.lander.velocity.y = nn_prediction[0]
+                    if (self.lander.velocity.x < nn_prediction[1]):
                         self.controller.set_right(True)
+                    else:
+                        self.controller.set_left(True)
+                    
+                    if (self.lander.current_angle > 30 and self.lander.current_angle < 330):
+                        ang_val = (self.lander.current_angle - 30)/(330-30)
+                        ang_val = round(ang_val)
+                        if (ang_val == 0):
+                            self.lander.current_angle = 30
+                        else:
+                            self.lander.current_angle = 330
+                    # print("lander vel: ", self.lander.velocity.y, " -- ", self.lander.velocity.x)
+                    # if (nn_prediction[1] == 1):
+                    #     self.controller.set_right(True)
+                    # elif (nn_prediction[1] == -1):
+                    #     self.controller.set_left(True)
+
+                    # self.lander.velocity.y = nn_prediction[0]
+                    # self.lander.velocity.x = nn_prediction[1]
+
+                    # self.lander.current_angle = int(nn_prediction[1])
+
+                    # if (nn_prediction[0] == 1):
+                    #     self.controller.set_up(True)
+                    # if (nn_prediction[1] == 1):
+                    #     self.controller.set_left(True)
+                    # elif (nn_prediction[2] == 1):
+                    #     self.controller.set_right(True)
 
                 # if (game_modes[1]):
                 #     data_collector.save_current_status(self.lander, self.surface, self.controller)

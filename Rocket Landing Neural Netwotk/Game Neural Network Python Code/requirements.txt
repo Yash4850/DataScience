@@ -1,5 +1,0 @@
-Seaborn
-pandas
-numpy
-matplotlib
-sklearn

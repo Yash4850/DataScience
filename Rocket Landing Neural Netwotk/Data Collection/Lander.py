@@ -46,10 +46,10 @@ class Lander(pygame.sprite.Sprite):
             movement = movement.add(Vector(0, -1)).scalar_multiply(delta_time)
 
         if self.controller.is_left():
-            theta = 20 * delta_time
+            theta = 10 * delta_time
 
         if self.controller.is_right():
-            theta = -20 * delta_time
+            theta = -10 * delta_time
 
         self.current_angle = self.current_angle + theta
         if (self.current_angle < 0):
