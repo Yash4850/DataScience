@@ -58,6 +58,7 @@ Any Machine Learning Project has a few steps that needs to be done for getting t
 2.	Also, there are no outliers in feature F15. So, we are replacing missing values with ‘Mean’. (FYI: If there are outliers, we replace the missing values with Median).
   
   ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Outlier.PNG)
+  
 3.	As the and features are not scaled, we are ‘Normalizing’ them.
 ## Model Building & Hyper-parameter Tuning:
 As the problem is classification, we are using ‘Decision tree Classifier, Random Forest Classifier, K-Nearest Neighbors Classifier, Support Vector Machine classifier and XG-boost Classifier’. In any Machine Learning model there are various number of hyper parameters which need to be tuned according to the given data, so that the model can fit. So, we do hyper-parameter tuning using Cross Validation. We are using ‘5-fold Grid Search Cross Validation’ which construct 5 versions of model with all the possible combinations of hyper-parameters. Taking consideration of best parameters, we have built learning models and calculated various evaluation metrics. 
