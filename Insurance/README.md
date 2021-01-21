@@ -56,7 +56,7 @@ Any Machine Learning Project has a few steps that needs to be done for getting t
 1.	It is observed that the data contains missing values in feature F15. If you see below graph you can clearly see that there is a ‘high correlation’ between F15 and Class. So, we cannot remove this feature. 
   ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Correlation.PNG)
 2.	Also, there are no outliers in feature F15. So, we are replacing missing values with ‘Mean’. (FYI: If there are outliers, we replace the missing values with Median).
-  
+  ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Outlier.PNG)
 3.	As the and features are not scaled, we are ‘Normalizing’ them.
 ## Model Building & Hyper-parameter Tuning:
 As the problem is classification, we are using ‘Decision tree Classifier, Random Forest Classifier, K-Nearest Neighbors Classifier, Support Vector Machine classifier and XG-boost Classifier’. In any Machine Learning model there are various number of hyper parameters which need to be tuned according to the given data, so that the model can fit. So, we do hyper-parameter tuning using Cross Validation. We are using ‘5-fold Grid Search Cross Validation’ which construct 5 versions of model with all the possible combinations of hyper-parameters. Taking consideration of best parameters, we have built learning models and calculated various evaluation metrics. 
@@ -67,7 +67,7 @@ The understanding level of Decision Trees algorithm is so easy compared with oth
 - ‘Min_samples_leaf’ - Minimum number of samples required to split a leaf node.
 ## KNN classifier:
 This is also one of the simplest algorithms in ML. It classifies data based on distance and number of nearest neighbors. So, it is the only parameter used for tuning. As you can see below when K is 5, we have the highest accuracy. So, we are taking ‘n_neighbors’ as 5.
- 
+ ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/KNN.PNG)
 ## Random Forest classifier:
 Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction. Random Forest has nearly the same hyperparameters as a decision tree.    
 - ‘Max_depth’ - Length of the longest path from the tree root to a leaf, 
@@ -84,7 +84,7 @@ The objective of the support vector machine algorithm is to find a hyperplane in
 ## Model Evaluation:
 We can make some quick comparisons between the different approaches used to improve performance showing the returns on each. 
 The following table shows the results from all the improvements we made: 
-
+ ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Table1.PNG)
 Comparatively SVM is high in accuracy, F1_score, Recall, Precision and AUROC. Henceforth, this learning model can be used as our final model.
 
 ## Prediction using best model:
@@ -103,10 +103,10 @@ I used 3 dense layers of 256 neurons each.
 - ‘RELU’ activation function is used as training a deep network with RELU tends to converge much more quickly and reliably than training with other activation functions like sigmoid. 
 - ‘Adam Optimizer’ is used as it changes the learning rate and momentum depending on the loss function. So, we do not need to extensively give them, and it is too fast and converges rapidly. 
 - Finally, ‘Early stopping’ is used as too many epochs can lead to overfitting of the training dataset, whereas too few may result in an underfit model. In the below graph you can clearly see the drop in train and test RMSE.
- 
+  ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/RMSE.PNG)
 ## Model Evaluation:
 We can make some quick comparisons between the different approaches used to improve performance showing the returns on each. The following table shows the results from all the improvements we made.
-
+ ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Table2.PNG)
 
 Comparatively, ‘Deep Neural Network’ has low MSE and RMSE. Henceforth, this learning model can be used as our final model.
 
