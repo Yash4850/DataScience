@@ -32,8 +32,10 @@ The next step is to find out how effective is the model based on performance eva
 It is the percentage of correctly classifies instances out of all instances. It is more useful on a binary classification than multi-class classification problems because it can be less clear exactly how the accuracy breaks down across those classes.
 ## Confusion matrix:
 The Confusion matrix contains metrics used for finding the correctness and accuracy of the model. It is a table with 4 different combinations of predicted and actual values.
+
 ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Confusion%20Matrix.PNG)
-   It is extremely useful for measuring Accuracy, Recall, Precision, F1 score.
+
+   <br />It is extremely useful for measuring Accuracy, Recall, Precision, F1 score.
    Accuracy = (TP + TN) / (TP + TN + FP + FN)
    It is the ratio of the number of correct predictions to the total number of input samples
    Recall/Sensitivity = TP / (TP + FN) 
