@@ -11,13 +11,13 @@ where N is the number of rows in the matrix.
 Classification algorithm
 1. Set a positive value for k.
 2. For each row x in the matrix data
- a. Find the k rows in the matrix learning_data that are the closest to the row x in the matrix data
+ 1. Find the k rows in the matrix learning_data that are the closest to the row x in the matrix data
 according to the Euclidean distance (see below).
- b. Given the rows found on Step 2(a), find the values of the same row numbers in the matrix
+ 2. Given the rows found on Step 2(a), find the values of the same row numbers in the matrix
 learning_data_labels.
- c. Given the values found in Step 2(b), find the most common value (that with the highest
+ 3. Given the values found in Step 2(b), find the most common value (that with the highest
 frequency). If two (or more) values have the same frequency, choose one of them at random.
- d. Set the row x of the matrix data_labels to the value found in Step 2(c).
+ 4. Set the row x of the matrix data_labels to the value found in Step 2(c).
 Euclidean distance:
 The Euclidean distance between a list_a and a list_b (both of size M) is given by:
 
