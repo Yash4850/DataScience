@@ -11,7 +11,7 @@ import random
 import math
 import statistics'''
 The csv module from the standard library is used to easily import the data from the csv file provided.A context manager is used to handle opening and closing the file.The values are converted to floating points before they are added to the matrix.
-'''
+code(
 def load_from_csv(file_name):
     matrix = []
     try:
@@ -24,8 +24,8 @@ def load_from_csv(file_name):
     except FileNotFoundError:
         import sys
         print("File not found in current directory")
-        sys.exit()
-'''
+        sys.exit())
+        
 def get_distance(a, b):
 
     """
