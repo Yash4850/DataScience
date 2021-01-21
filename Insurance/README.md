@@ -56,6 +56,7 @@ Any Machine Learning Project has a few steps that needs to be done for getting t
 1.	It is observed that the data contains missing values in feature F15. If you see below graph you can clearly see that there is a ‘high correlation’ between F15 and Class. So, we cannot remove this feature. 
   ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Correlation.PNG)
 2.	Also, there are no outliers in feature F15. So, we are replacing missing values with ‘Mean’. (FYI: If there are outliers, we replace the missing values with Median).
+  
   ![alt text](https://github.com/Yash4850/DataScience/blob/main/Insurance/Figures/Outlier.PNG)
 3.	As the and features are not scaled, we are ‘Normalizing’ them.
 ## Model Building & Hyper-parameter Tuning:
