@@ -6,8 +6,8 @@ The task of this project is to explore the feasibility of using Machine Learning
 In solving any type of problem, selecting a specific type of predictive task plays a vital role. Predictive tasks such as classification, regression, clustering, rules mining have their own significance. For example, classification techniques are used for predicting a discrete class label output. Similarly, Regression techniques are used for predicting a continuous output and finally Clustering and rules mining are for unsupervised and market-based analysis, respectively. As problem statement refers to predicting categorical output with two categories, ‘Binary Classification’ predictive task suits better. 
 ## Possible Informative Features:
 Informative Features are the variables required for any given problem that can sufficiently help us build an accurate predictive model. A few examples of possible features are listed below:
-•	<br />Name of the travel insurance products 
-•	Duration of travel 
+- Name of the travel insurance products 
+- Duration of travel 
 •	Destination of travel 
 •	Mode of transport
 •	Number of previous insurance policies
