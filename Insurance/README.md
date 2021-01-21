@@ -1,4 +1,5 @@
-#1.	Pilot-Study Proposal
+#                 1.	Pilot-Study Proposal
+
 Problem Statement:
 The task of this project is to explore the feasibility of using Machine Learning to forecast whether a customer will file a claim on their travel.
 Predictive Task:
