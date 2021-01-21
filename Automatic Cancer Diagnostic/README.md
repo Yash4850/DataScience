@@ -2,17 +2,23 @@
 It is quite expensive to determine whether a particular patient has cancer or not.This software will read CSV files with measurements taken from blood tests of patients and produce a diagnostic.
 
 The aim of this software is to classify each row of the data matrix (representing the measurements of one patient). The algorithm you should use is explained in the appendix.
-
+```ruby
 # Importing libraries/modules
-'''from collections import Counter
+
+from collections import Counter
 from csv import reader
 from timeit import default_timer
 import random
 import math
-import statistics'''
-The csv module from the standard library is used to easily import the data from the csv file provided.A context manager is used to handle opening and closing the file.The values are converted to floating points before they are added to the matrix.
-code(
+import statistics
+
 def load_from_csv(file_name):
+
+    """
+    The csv module from the standard library is used to easily import the data from the csv file provided.
+    A context manager is used to handle opening and closing the file.
+    The values are converted to floating points before they are added to the matrix.
+    """
     matrix = []
     try:
         with open(file_name, "r") as csvfile:
@@ -24,8 +30,8 @@ def load_from_csv(file_name):
     except FileNotFoundError:
         import sys
         print("File not found in current directory")
-        sys.exit())
-        
+        sys.exit()
+
 def get_distance(a, b):
 
     """
@@ -182,7 +188,8 @@ if __name__ == "__main__":
     start = default_timer()
     run_test()
     end = default_timer()
-    print(f"\nTime taken: {end-start}")'''
+    print(f"\nTime taken: {end-start}")
+ ```
   
 # Appendix
 Data standardization
