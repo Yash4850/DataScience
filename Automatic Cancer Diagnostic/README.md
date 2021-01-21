@@ -2,7 +2,7 @@
 It is quite expensive to determine whether a particular patient has cancer or not.This software will read CSV files with measurements taken from blood tests of patients and produce a diagnostic.
 
 The aim of this software is to classify each row of the data matrix (representing the measurements of one patient). The algorithm you should use is explained in the appendix.
-code(# Importing libraries/modules
+'code(# Importing libraries/modules
 
 from collections import Counter
 from csv import reader
@@ -187,7 +187,7 @@ if __name__ == "__main__":
     start = default_timer()
     run_test()
     end = default_timer()
-    print(f"\nTime taken: {end-start}"))
+    print(f"\nTime taken: {end-start}"))'
 # Appendix
 Data standardization
 where, x is a non-negative integer representing a row number, y is a non-negative integer representing a column number, avg(matrix(:,y)) is the average of column y over all the rows, and std(matrix(:,y)) is the corrected sample standard deviation of column y over all the rows.
