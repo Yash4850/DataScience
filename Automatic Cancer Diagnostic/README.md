@@ -213,4 +213,5 @@ frequency). If two (or more) values have the same frequency, choose one of them 
  4. Set the row x of the matrix data_labels to the value found in Step 2(c).
 ## Euclidean distance:
 The Euclidean distance between a list_a and a list_b (both of size M) is given by:
+
 ![alt text](https://github.com/Yash4850/DataScience/blob/main/Automatic%20Cancer%20Diagnostic/Figures/Euclidean%20Distance.PNG)
