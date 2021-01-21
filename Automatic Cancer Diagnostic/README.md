@@ -4,14 +4,12 @@ It is quite expensive to determine whether a particular patient has cancer or no
 The aim of this software is to classify each row of the data matrix (representing the measurements of one patient). The algorithm you should use is explained in the appendix.
 
 # Importing libraries/modules
-'''
-from collections import Counter
+'''from collections import Counter
 from csv import reader
 from timeit import default_timer
 import random
 import math
-import statistics
-'''
+import statistics'''
 The csv module from the standard library is used to easily import the data from the csv file provided.A context manager is used to handle opening and closing the file.The values are converted to floating points before they are added to the matrix.
 '''
 def load_from_csv(file_name):
