@@ -1,8 +1,8 @@
-# Automatic Cancer Diagnostic
+## Automatic Cancer Diagnostic
 It is quite expensive to determine whether a particular patient has cancer or not. This software will read CSV files with measurements taken from blood tests of patients and produce a diagnostic.
 
 The aim of this software is to classify each row of the data matrix (representing the measurements of one patient). The algorithm used is explained in the appendix.
-# Code
+## Code
 ```ruby
 # Importing libraries/modules
 
@@ -192,7 +192,7 @@ if __name__ == "__main__":
     print(f"\nTime taken: {end-start}")
  ```
   
-# Appendix
+## Appendix
 ## Data standardization:
 ![alt text](https://github.com/Yash4850/DataScience/blob/main/Automatic%20Cancer%20Diagnostic/Figures/Matrix.PNG)
 
