@@ -44,6 +44,9 @@
 - Finally, get weights and biases.
 - Gave the weights and biases in Neural Net.py, calculated forward propagation and ran the game.
 
+## Result
+- The rocket landed on the landing pad correctly after training the collected data for 500 epochs
+
 ## Code
 ```ruby
 
