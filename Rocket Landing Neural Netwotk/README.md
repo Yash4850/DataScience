@@ -24,6 +24,9 @@
 - Given 500 epochs (tried 100 to 10,000).
 - Given alpha and lambda as 0.1 (tried 0.1 to 0.01).
 - Given Learning rate as 0.01(tried 01 to 0.01).
+
+![alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Picture1.png)
+
 - Finally, got weights and biases.
 - Gave the weights and biases in Neural Net.py, calculated forward propagation and ran the game.
 
