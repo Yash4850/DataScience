@@ -1,7 +1,7 @@
 # Neural Network Game
 ## The objective of the game:
 
-alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Rocket.PNG)
+![alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Rocket.PNG)
 
 - Steer and apply thrust to the lander.
 - Avoid hitting the outside edge or the ground.
