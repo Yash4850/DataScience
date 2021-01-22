@@ -1,4 +1,17 @@
 # Neural Network Game
+## The objective of the game:
+- Steer and apply thrust to the lander.
+
+![alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Rocket.PNG)
+
+- Avoid hitting the outside edge or the ground.
+- Safely put the lander on the target to proceed.
+
+## Data Collection
+- Each run of the game is added to the same file once the game has been closed.
+- The data in output to the ce889_dataCollection.csv file
+- We need to collect data multiple time to ensure there is enough data for the NN to learn from. 
+
 ## Data Pre-processing
 - Read the data using pandas
 - Check for null values
@@ -12,6 +25,7 @@
 - Create Sigmoid function and it’s derivative(taking lambda value as 0.01)
 - Initialize weights and biases to random values.
 - Calculate Feed forward (dot product of inputs and hidden weights),(dot product of activation outputs and output weights)
+
 #### Backward Propagation :
 - Calculate Error (2*e)
 - Calculate Local Gradient(delta)
@@ -27,8 +41,11 @@
 
 ![alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Picture1.png)
 
-- Finally, got weights and biases.
+- Finally, get weights and biases.
 - Gave the weights and biases in Neural Net.py, calculated forward propagation and ran the game.
+
+## Result
+- The rocket landed on the landing pad correctly after training the collected data for 500 epochs
 
 ## Code
 ```ruby
