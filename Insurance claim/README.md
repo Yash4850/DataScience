@@ -115,6 +115,9 @@ Comparatively, ‘Deep Neural Network’ has low MSE and RMSE. Henceforth, this 
 ## Prediction using best model:
 Further step is to predict the output label ‘Target’ in test data by using Deep Neural Network learning model which gives the value of the claim.
 
+## Code
+You can find the code [here](https://github.com/Yash4850/DataScience/blob/main/Insurance%20claim/Code/CE802_P2_Notebook.ipynb)
+
 ## References: 
 1.	www.kaggle.com
 2.	https://scikit-learn.org/stable/
