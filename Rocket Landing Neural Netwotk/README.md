@@ -1,4 +1,18 @@
 # Neural Network Game
+## The objective of the game:
+
+alt text](https://github.com/Yash4850/DataScience/blob/main/Rocket%20Landing%20Neural%20Netwotk/Figures/Rocket.PNG)
+
+- Steer and apply thrust to the lander.
+- Avoid hitting the outside edge or the ground.
+- Safely put the lander on the target to proceed.
+## Data Collection
+Each run of the game is added to the same file once the game has been closed.
+
+The data in output to the ce889_dataCollection.csv file
+
+You need to collect data multiple time to ensure there is enough data for the NN to learn from. 
+
 ## Data Pre-processing
 - Read the data using pandas
 - Check for null values
