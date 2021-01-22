@@ -1,5 +1,5 @@
 # Automatic Cancer Diagnostic
-It is quite expensive to determine whether a particular patient has cancer or not.This software will read CSV files with measurements taken from blood tests of patients and produce a diagnostic.
+It is quite expensive to determine whether a particular patient has cancer or not. This software will read CSV files with measurements taken from blood tests of patients and produce a diagnostic.
 
 The aim of this software is to classify each row of the data matrix (representing the measurements of one patient). The algorithm used is explained in the appendix.
 # Code
