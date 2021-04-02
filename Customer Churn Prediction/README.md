@@ -19,7 +19,7 @@ We are provided with a dataset from a telecommunications company. The data conta
 • How can we improve techniques previously proposed?
 
 ### 1. Exploratory Data Analysis:
-Before going to analysis, we need to look at the data for null values and categorical variables. So, I performed a lot of pre-processing steps, but I am not mentioning them here as this report is more on explaining the above-mentioned business objectives. If you want to know more on data pre-processing steps, please refer to the Jupyter notebook (code) that I submitted as I have explained everything more clearly there.
+Before going to analysis, we need to look at the data for null values and categorical variables. So, I performed a lot of pre-processing steps, but I am not mentioning them here as this report is more on explaining the above-mentioned business objectives. If you want to know more on data pre-processing steps, please refer to the code [here](https://github.com/Yash4850/DataScience/blob/main/Customer%20Churn%20Prediction/Code.ipynb) as I have explained everything more clearly.
 
 #### 1.1.	Initial Observations:
 
