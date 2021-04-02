@@ -18,4 +18,13 @@ We are provided with a dataset from a telecommunications company. The data conta
 
 • How can we improve techniques previously proposed?
 
+### 1. Exploratory Data Analysis:
+Before going to analysis, we need to look at the data for null values and categorical variables. So, I performed a lot of pre-processing steps, but I am not mentioning them here as this report is more on explaining the above-mentioned business objectives. If you want to know more on data pre-processing steps, please refer to the Jupyter notebook (code) that I submitted as I have explained everything more clearly there.
+
+#### 1.1.	Initial Observations:
+
+•	Only 16% of the population are Senior Citizens and only 30% of the population have dependents.
+
+•	10% of the population still does not have phone service. But our aim here is to retain the existing customers, not to get new customers. So, we do not focus more on this.
+
 
