@@ -27,4 +27,4 @@ Before going to analysis, we need to look at the data for null values and catego
 
 •	10% of the population still does not have phone service. But our aim here is to retain the existing customers, not to get new customers. So, we do not focus more on this.
 
-
+![alt text](https://github.com/Yash4850/DataScience/blob/main/Customer%20Churn%20Prediction/Figures/Picture1.jpg)
