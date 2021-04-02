@@ -75,9 +75,7 @@ As you can clearly see that XG-boost is better than KNN in all the metrices. Sti
 #### 2.1.	Over Sampling:
 
 To solve this problem, we will create synthetic data using over sampling to get the ‘Yes’ and ‘No’ to the same ratio. Let us look at the evaluation metrics after performing over sampling.
-    	  Accuracy	F1 Score	Precision	Recall	AUC ROC
-KNN	      84.3%	0.842	0.853	0.843	0.845
-XG boost	88.2%	0.882	0.885	0.882	0.883
+   
 
 So, after performing over sampling, the accuracy increased a lot. XG boost is still giving better accuracy than KNN (this is expected as XG-boost is an ensemble technique). For further improving the accuracy we can use Deep Neural Network, but it takes a lot of time.
 
