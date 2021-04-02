@@ -7,8 +7,15 @@ Accordingly, predicting the churn, we can react in time and try to keep the clie
 ### Objective:
 
 We are provided with a dataset from a telecommunications company. The data contains information about almost six thousand users, their demographic characteristics, the services they use, the duration of using the operator's services, the method of payment, and the amount of payment. The task is to analyze the data and predict the churn of users (to identify people who will and will not renew their contract) by doing Exploratory Data Analysis and building Machine Learning prediction models. We investigate the following tasks in this report:
+
 • Exploratory Data Analysis.
+
 • Research of dependencies and formulation of hypotheses.
+
 • Is there any bias in the dataset? How can it be addressed?
+
 • Building prediction models and compare the quality of the obtained models?
+
 • How can we improve techniques previously proposed?
+
+
